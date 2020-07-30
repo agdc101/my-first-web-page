@@ -1,0 +1,311 @@
+/*--- Global Layout Set-up ---*/
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: rgb(196, 241, 241);
+}
+
+header {
+  line-height: 1.4;
+}
+
+h1 {
+  text-shadow: 3px 3px 3px rgb(65, 64, 64);
+  font-size: 48px;
+  
+}
+h2 {
+  text-align: center;
+  color: white;
+  text-decoration: underline yellow;
+  letter-spacing: 1px;
+
+}
+
+/*--- Link Styles ---*/
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.telford:visited {
+  color: rgb(64, 163, 167);
+
+}
+a:hover {
+  color: #ffd103;
+  transition: all .8s ease-out;
+}
+.telford:hover {
+  color: #ffd103;
+  transition: all .8s ease-out;
+}
+.github {
+  margin-left: 158px;
+  border: solid 4px  rgb(64, 163, 167);
+  border-radius: 45%;
+  
+}
+/*--- Index.html Styles--- */
+
+.main-nav {
+  width: 100%;
+  background:rgb(64, 163, 167);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: left;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto 0 0;
+  padding: 0;
+}
+
+.main-header {
+  text-align: center;
+  background: url('images/background.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 30px;
+  height: 680px;
+  letter-spacing: 2px;
+  
+}
+
+.tag {
+  color: rgb(84, 125, 238);
+  padding: 10px;
+  border-radius: 20px;
+  display: table;
+  margin: 30px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.job {
+  background-color: rgb(64, 163, 167);
+  color: white;
+  padding: 10px 26px;
+  border-radius: 20px;
+  display: table;
+  margin: 10px auto;
+}
+.job,
+.location {
+  border: 1px solid rgb(248, 246, 246);
+  box-shadow: 0px 3px 2px rgb(243, 146, 18);
+}
+.location {
+  background-color: rgba(241, 228, 210, 0.911);  
+}
+section {
+  margin: 30px;
+  padding: 20px 40px 20px;
+  max-width: 500px;
+  text-align: left;
+  color: white;
+  background: rgb(83, 127, 185);
+  border-bottom: 4px solid #ccc;
+  border-radius: 32px;
+  box-shadow: 4px 6px 8px 8px rgb(231, 184, 53);
+  transition: all .5s;
+  clear: both;
+  
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 0 20px;
+}
+
+.copyright {
+  font-size: 0.75em;
+  font-family: Helvetica, sans-serif;
+}
+
+/*--- Contact Page Styles--- */
+
+.campbell-logo {
+  border-radius: 25%;
+  margin-top: 90px;
+  border: rgba(64, 164, 167, 0.815) solid 3px;
+}
+.contact-list {
+  list-style-type: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: rgb(63, 37, 211);
+  text-align: center;
+  line-height: 2.2;
+  margin: -18px 260px;
+  padding: 20px;
+}
+.contact-header {
+  background: url(images/contact-sky.jpg) no-repeat center;
+  background-size: cover;
+}
+.email-link {
+  color: rgb(63, 37, 211);
+}
+/* --- Experiences Page Styls --- */
+.experiences {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cap-text,
+.cap-name {
+  display: inline-block;
+}
+
+.experiences-header {
+  background: url(images/experiences-background.jpg) no-repeat center;
+  background-size: cover;
+  margin: auto;
+  color: whitesmoke;
+  height: 680px;
+}
+.experience-title {
+  margin-top: 0;
+  padding-top: 110px;
+  font-size: 58px;
+}
+q {
+  font-size: 32px;
+  color: rgba(236, 187, 53, 0.849);
+  text-shadow: 3px 2px 3px black;
+  line-height: 1.9;
+  padding: 30px;
+}
+.experiences {
+  width: 45%;
+  max-width: 1260px;
+  line-height: 1.7;
+}
+
+/*--- image styles--- */
+
+.profile-image {
+  margin-top: 50px;
+  width: 170px;
+  height: 170px;
+  border-radius: 25%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+.profile-image:hover {
+  transform: scale(1.8) rotate(360deg);
+}
+
+.ash-perth {
+  float: right;
+  border-radius: 50px;
+  margin: 0 0 12px 10px;
+  transition: all .4s;
+}
+
+.ash-perth:hover,
+.india:hover,
+.vegas:hover,
+.burma:hover {
+  transform: scale(1.40); 
+}
+
+.ash-tech {
+  border-radius: 25%;
+  margin-left: 35px;
+}
+.experience-pics {
+  margin: auto;
+  border-radius: 25%;
+  width: 320px;
+  height: 280px;
+  
+}
+
+#skiing {
+  width: 260px;
+  height: 320px;
+}
+
+.vegas,
+.india,
+.burma {
+  margin: 0 10px 0 80px;
+  border-radius: 25%;
+  width: 280px;
+  height: 280px;
+  transition: all .4s;
+}
+
+
+/*--- list styles--- */
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 8px;
+  display: inline-block;
+  background: whitesmoke;
+  color: #0399ff;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+  color: white;
+}
+
+/* --- Styles for larger screens --- */
+@media screen and (min-width: 720px) {
+  
+  .primary-content {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+}
+  header {
+    min-height: 510px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding-left: 55px;
+    
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
